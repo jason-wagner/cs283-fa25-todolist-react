@@ -109,7 +109,7 @@ function App() {
           </form>
           <ul className="mt-8">
             {todos.map((todo) => (
-              <li key={todo.id} class="flex mt-6 items-center justify-between">
+              <li key={todo.id} className="flex mt-6 items-center justify-between">
                 <div className="flex flex-1 items-center mr-6">
                   <input type="checkbox" onChange={() => completeTodo(todo.id)} checked={todo.isComplete} />
                   { !todo.isEditing ? (
